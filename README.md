@@ -6,8 +6,7 @@ Implementation of the _Perceptual Losses Neural Style Transfer_ model in the pap
 
 ![Architecture](./figure/model.png)
 
-## Model is trained on the COCO 2017 Validation dataset due to time limitations. Train on the full COCO 2017 train dataset to use it to its full potential.
-
+## Model is trained on the COCO 2017 Validation dataset.
 Once the Image Transformation Network is trained on any style image using the COCO dataset, it can style any content image.
 
 The hyperparameters such as Batch size, Epochs, Style Weight and Content Weight can be adjusted to give the best results.
@@ -22,17 +21,19 @@ The hyperparameters such as Batch size, Epochs, Style Weight and Content Weight 
 7. In the Style transfer section, set the path of the model as well as the content image.
 8. Run the Style Transfer function to style your image.
 
-## Example
+## Limitations: The model is trained on the validation dataset of COCO due to time limitations. To improve the model further, we can train the model on the full COCO Dataset and adjust the style and content weight to achieve the best possible results.
 
- # Style Image
+# Example
+
+ ## Style Image
 
 ![Architecture](./style_imgs/mosaic.jpg)
 
-# Content Image
+## Content Image
 
 ![Architecture](./content_imgs/maine.jpg)
 
-# Output Image
+## Output Image
 
 ![Architecture](./figure/mosaic_maine.jpg)
 
